@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get familiar with pseudo classes</title>
+        <style>
+            body{
+                margin:1px;
+                font-family:'Times New Roman', Times, serif;
+                background-color:black;
+                color:white;
+            }
+            ul>li{
+                font-weight:bold;
+                color:blue;
+            }
+            a:hover{
+                color: #1F6FE8;
+            }
+            ul li:nth-child(6){
+                background-color:#21262D;
+            }
+            ul li:hover{
+                color:#C90109;
+            }
+            p{
+                color:grey;
+            }
+            p::first-letter{
+                font-style:italic;
+                font-size:60px;
+                color:darkgray;
+            }
+            h2::first-letter{
+                font-style:italic;
+                font-size:75px;
+                color:grey;
+            }
+            </style>
+            </head>
+            <body>
+                <h1 style="background-color: #161B22;padding: 10px;border-radius: 5px;">Welcome to The Space Exploration</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>Missions</li>
+                    <li>Humans in Space</li>
+                    <li>Earth</li>
+                    <li>The Solar System</li>
+                    <li>The Universe</li>
+                    <li>Science</li>
+                    <li>Aeronautics</li>
+                    <li>Technology</li>
+                    <li>Learning Resources</li>
+                    <li>About Us</li>
+                </ul>
+
+                <h1 style="color:white;font-weight:bold;font-size:80px;">Welcome to the<br>
+                    Universe</h1>
+                <h2>Discover the universe: Learn about the history of the cosmos, what it's 
+                    made of, and so much more.
+                </h2>
+
+
+
+                <p>
+                   QPEs, or quasi-periodic eruptions, are a class of X-ray flares made when objects 
+                   move through gas disks surrounding supermassive black holes. Studying QPEs can 
+                   help us understand how these monster black holes interact with their environments
+                    — places where gravity, energy, and matter behave in ways we can’t replicate 
+                    on Earth. Using data from telescopes, scientists have probed one of these 
+                    mysterious phenomena, bringing us a step closer to cracking their cosmic rhythm.<br><br><br>
+
+                    <a href="Learn More" style="font-size:20px;">Learn More...</a>
+
+                </p>
+
+
+            </body>
+            </html>
