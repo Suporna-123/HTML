@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Object Data structure and Array</h2>
+        <p>Here Tinu will be storing some information 
+            about herself and add some of her favourite colour's 
+            list.
+        </p>
+
+        <h4>Tinu is a student of sophomore year in high school. 
+            She loves painting. Recently she has started to learn coding and she enjoys it very much.
+        </h4>
+
+        <p id="myjoin"></p>
+        <p id="myfirstpop"></p>
+        <p id="mysecondpop"></p>
+
+        <script>
+            var colours = ["White", "Black", "Pink", "Green", "Blue", "Purple", "Red", "Orange"];
+            document.getElementById("myjoin").innerHTML = colours.join
+            (" * ");
+            document.getElementById("myfirstpop").innerHTML = colours.pop();
+            document.getElementById("mysecondpop").innerHTML = colours.pop();
+        </script>
+    </body>
+</html>
