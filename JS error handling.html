@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Javascript Error Handling and Arrow Function</h2>
+        <p>Hello there. Today I'm here to demonstrate the use of <b>catch</b> to display an error.</p>
+        <p id="result"></p>
+
+        <script>
+            product = (a,b) => a*b;
+            try{
+                document.getElementById("result").innerHTML = a;
+            }
+            catch(err) {
+                document.getElementById("result").innerHTML = err.message;
+            }
+           
+            </script>
+            </body>
+            </html>
