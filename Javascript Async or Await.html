@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(AI.jpg);
+                background-size:contain;
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                color: white;
+            }
+            </style>
+            </head>
+            <body>
+                <h2>Javascript Async / Await</h2>
+                <h1 id="result"></h1>
+                <script>
+                    async function product(a,b) {
+                        let response = await a * b;
+                        display(response);
+                    }
+                    function display(some) {
+                        document.getElementById("result").innerHTML = some;
+                    }
+                    product(7,205);
+                    </script>
+                    </body>
+                    </html>
