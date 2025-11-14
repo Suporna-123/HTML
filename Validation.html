@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validate Inputs</title>
+        >
+        <style>
+            body{
+                background-color:black;
+                color:white;
+            }
+            .text1{
+                color:red;
+                text-decoration: overline;
+            }
+            .text2{
+                color: #71ffb0;
+                text-decoration: underline;
+            }
+            .text3{
+                color: rgb(70, 98, 120);
+                text-decoration: underline;
+            }
+            .text4{
+                color: rgba(0, 0, 0, 0.4);
+                text-decoration: underline overline;
+            }
+            .p1{
+                color: rgb(88, 211, 16);
+                text-decoration: underline;
+                font-family: "Times New Roman", Times, serif;
+            }
+            .p2{
+                font-family:Arial, Helvetica, sans-serif;
+            }
+        </style>
+
+        <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            
+            var y = document.forms["myForm"]["age"].value;
+            if (y == "") {
+                alert("Age must be given");
+                return false;
+            }
+        }
+        </script>
+
+        
+    </head>
+    <body>
+        <h2 class="p1">Hello Everyone. Welcome to Explorers' Club</h2>
+        <form name="myForm" class="text2" onsubmit="validateForm();">
+            Name: <input type="text" id="name" name="fname">
+            Age: <input id="id1" type="number" name="age" min="18">
+            <input type="submit" value="Login">
+            <p class="text1" id="message"><b>Please read the terms and conditions carefully</b></p>
+        </form>
+
+      
+    </body>
+</html>
